@@ -7,7 +7,7 @@ This guide describes to do manually setup one DATALAKE cluster with Hadoop on AW
 
 
 ## 1. Step: Create 3 Isntance (t2.Xlarge) with the options
-* AMI: Red Hat Enterprise Linux 8 64 bit
+* AMI: Amazon Linux 2 AMI (HVM), SSD Volume Type 64 bit
 * Network: vpc by default + No precense subnet + Public IP Use subnet  setting (enable)
 * Storage: Root disk 40 GB + Add Volume 100GB Magnetic (delete on termination)
 * Use security group created (ClsChongNameNodeGroup)
