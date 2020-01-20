@@ -21,7 +21,7 @@ sudo reboot
 
 ## Manage user hadoop and SSH
    Let´s Setup passphraseless ssh (ssh without credentials)</br>
-   Note: 1 - Suppose we have cluster with 300 machines, 1 namenodes, 1 secondnamenodes and 298 datanodes.
+         1 - Suppose we have cluster with 300 machines, 1 namenodes, 1 secondnamenodes and 298 datanodes.
              We don´t neeed configure 300 user and password, so we use ssh to make comunication between master and datanodes
              SSH is an security protocol encrypted, we configure key pairs, private and public.
              The private key is stored in masternode and we copy public keys to all existing datanodes.
@@ -100,8 +100,7 @@ sudo chown -R hadoop:hadoop /opt/hadoop
 
 * Testing installation
 ```bash
-cd /opt/hadoop/bin
-./hadoop version
+cd /opt/hadoop/bin/./hadoop version
 ```
 
 
@@ -145,7 +144,7 @@ export PATH="${PATH}:${HADOOP_HOME}/bin"
    <property>
       <!-- HDFS PATH -->
      <name>fs.default.name</name>
-     <value>hdfs://ip-172-31-7-63.us-east-2.compute.internal:19000</value><!--- dns namenode
+     <value>hdfs://ip-172-31-7-63.us-east-2.compute.internal:19000</value><!--- dns namenode -->
    </property>
 </configuration>
 ``` 
@@ -196,7 +195,7 @@ ip-172-31-14-249.us-east-2.compute.internal
    
    <property>
       <name>yarn.resourcemanager.address</name>
-      <value>ip-172-31-8-152.us-east-2.compute.internal:8032</value><!-- endereço do namenode. -->
+      <value>ip-172-31-8-152.us-east-2.compute.internal:8032</value><!-- dns namenode. -->
    </property>
 
    <property> 
@@ -228,7 +227,7 @@ ip-172-31-14-249.us-east-2.compute.internal
 
   <property>
      <name>yarn.resourcemanager.hostname</name>
-     <value>ip-172-31-7-63.us-east-2.compute.internal</value><!-- endereço do namenode  -->
+     <value>ip-172-31-7-63.us-east-2.compute.internal</value><!-- dns namenode  -->
   </property>
 
   <property>
@@ -293,7 +292,7 @@ cd /opt
 sudo chown -R hadoop:hadoop /opt/hadoop/
 ``` 
 
-* Go to NameNode and connect with hadoop user and copy folder hadoop to all DataNodes
+* Go to NameNode and connect with hadoop user and copy folder hadoop to all DataNodes.<br>
   Another option is create one image from NameNode and copy to DataNodes
 ```bash
 cd ~
@@ -301,15 +300,32 @@ scp -rv  /opt/hadoop  hadoop@ip-172-31-2-100.us-east-2.compute.internal:/opt ---
 scp -rv  /opt/hadoop  hadoop@ip-172-31-14-249.us-east-2.compute.internal:/opt------------datanode2
 ``` 
 
+## Starting cluster    
+* with hadoop user on Node Master.
+```bash
+hdfs namenode -format
+```  
 
- ## starting cluster    
-    
-    
+* Start HDFS.
+```bash
+$HADOOP_HOME/sbin/start-dfs.sh
+``` 
 
+* Start YARN.
+```bash
+$HADOOP_HOME/sbin/start-yarn.sh
+``` 
 
-   3 - jps ------------> checking services.If hadoop services is not running you must start
-   
-  
+* Checking services.
+```bash
+jps
+``` 
+
+* Check Report.
+```bash
+hdfs dfsadmin -report
+```   
+ 
  NOTE: 
        1 - if you doesn't change hadoop parameter cnfiguration it´s will assume default configuration and save on temporary folder tmp
            Hadoop Oficial doc : https://hadoop.apache.org/docs/stable/index.html
@@ -320,4 +336,4 @@ scp -rv  /opt/hadoop  hadoop@ip-172-31-14-249.us-east-2.compute.internal:/opt---
        3 - you can format namenode again or drop all content inside folder tmp/hadoop-xxxxxx if any problem occurs but not 
            in production environment
 
-       4 - Check my namenode on : http://3.227.30.97:9870/
+       4 - Check my namenode on : http://ec2-18-217-111-17.us-east-2.compute.amazonaws.com:9870/
