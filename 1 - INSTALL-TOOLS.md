@@ -77,15 +77,20 @@ sudo tar xzf java_package_name
 ```bash 
 sudo mv jdk1.8.0_221/ /opt/jdk
 ```
+*  adjust previleges
+```bash 
+sudo chown -R root:root jdk
+```
 *  Edit .bashrc Under home/user directory to create envirnoment variable for java and add
 ```bash 
-nano .bashrc
+nano .bash_profile
   export JAVA_HOME=/opt/jdk
-  export PATH=$PATH:$JAVA_HOME/bin
+  export JRE_HOME=/opt/jdk/jre
+  export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
 ```
 * Reactive and update and read news environment variable
 ```bash 
-source .bashrc
+source .bash_profile
 ```
 * To confirm java installation
 ```bash 
@@ -102,12 +107,12 @@ java -version
    ```
   *  Edit .bashrc Under home/user directory to create envirnoment variable and inform spark to work with jupyter notebook
    ```bash 
-   nano .bashrc
+   nano .bash_profile
    export PYSPARK_DRIVER_PYTHON=jupyter
    export PYSPARK_DRIVER_PYTHON_OPTS=notebook
    export PYSPARK_PYTHON=python3
    ```
   * Reactive and update and read news environment variable
    ```bash 
-   source .bashrc
+   source .bash_profile
    ```
