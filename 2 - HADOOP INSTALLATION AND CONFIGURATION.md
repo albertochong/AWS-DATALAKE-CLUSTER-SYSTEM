@@ -20,7 +20,7 @@ sudo reboot
 ```
 
 ## Manage user hadoop and SSH
-   Let´s Setup passphraseless ssh (ssh without credentials)
+   Let´s Setup passphraseless ssh (ssh without credentials)</br>
    Note: 1 - Suppose we have cluster with 300 machines, 1 namenodes, 1 secondnamenodes and 298 datanodes.
              We don´t neeed configure 300 user and password, so we use ssh to make comunication between master and datanodes
              SSH is an security protocol encrypted, we configure key pairs, private and public.
@@ -34,7 +34,7 @@ sudo reboot
          3 - After reinitialize service ssh in terminal
              sudo systemctl restart sshd
    
-* Allow user hadoop to connect instance
+* Allow user hadoop to connect instance.
   Connect with root in 3 instances
 ```bash
 sudo mkdir /home/hadoop/.ssh
@@ -44,7 +44,7 @@ sudo chown hadoop:hadoop /home/hadoop/.ssh/authorized_keys
 sudo chmod 600 /home/hadoop/.ssh/authorized_keys
 ```
 
-* Configure ssh
+* Configure ssh.
   Connect with hadoop in 3 instances and uncomment follow lines
 ```bash
 sudo nano /etc/ssh/sshd_config
@@ -75,14 +75,9 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop@datanode2
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
-* From all servers with user hadoop
-```bash
-cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-```
-
 * Testing connection from NameNode
 ```bash
-ssh hadoop@dns_DataNode_machine
+ssh hadoop@dns_DataNode1_machine
 ```
 
 ## Hadoop Installation e Configuration
