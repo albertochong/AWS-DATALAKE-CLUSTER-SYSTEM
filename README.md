@@ -45,10 +45,11 @@ SSH               TCP             22          Anywhere
 ## 3. Step: Sqoop Installation and Configuration
   * Install and Configure Sqoop
 
-### 3.1. Step: Import data from Postgree to HDFS
-  * Download connector JDBC         -------- NOT FINISHED
-  * Copy .jar to lib sqoop folder   -------- NOT FINISHED
-  * Import Data from Postgree to HDFS -------- NOT FINISHED
+### 3.1. Step: Import data from PostgreSql to HDFS
+  * Download connector JDBC for PostgreSql        
+  * Copy .jar to lib sqoop folder  
+  * Connect to PostgreSql and list tables from Database 
+  * Connect to PostgreSql and import Data to HDFS 
   
 
 
