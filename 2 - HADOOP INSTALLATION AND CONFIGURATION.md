@@ -336,4 +336,6 @@ hdfs dfsadmin -report
        3 - you can format namenode again or drop all content inside folder tmp/hadoop-xxxxxx if any problem occurs but not 
            in production environment
 
-       4 - Check my namenode on : http://ec2-18-217-111-17.us-east-2.compute.amazonaws.com:9870/
+       4 - Check my namenode on : http://13.59.94.15:9870/
+           Check my Datanode1 on : http://3.20.97.41:9864
+           Check my Damenode2 on : http://3.20.36.83:9864
