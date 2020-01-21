@@ -1,5 +1,5 @@
 # SQOOP Installation and Configuration
-System for bulk data transfer between HDFS and structured datastores as RDBMS. Like Flume but from HDFS to RDBMS.
+System for bulk data transfer between HDFS and structured datastores as RDBMS on both directions.
 
 ### Run in terminal(NameNode or another server) with user hadoop
 
@@ -65,3 +65,7 @@ export HIVE_HOME=/opt/hive
 sqoop version 
 ```
 
+* checking for parameter help
+```bash
+sqoop help 
+```
