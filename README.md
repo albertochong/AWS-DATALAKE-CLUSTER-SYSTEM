@@ -27,7 +27,7 @@ SSH               TCP             22          Anywhere
 ```
 
 ## 1. Step: Install some tools
-  * Instsall wget
+  * Install wget
   * Install nano
   * Install gedit
   * Install Anaconda
@@ -35,20 +35,20 @@ SSH               TCP             22          Anywhere
   * Install Java
 
 ## 2. Step: Hadoop Installation and Configuration
-  * Instsall and Configure Hadoop NameNode and DataNode 
+  * Install and Configure Hadoop NameNode and DataNode 
   
-## 2.1 Step: Working with HDFS
+### 2.1 Step: Working with HDFS
   * List files 
   * Create directory
   * copy files 
   
-## 2. Step: Sqoop Installation and Configuration
-  * Instsall and Configure Sqoop
+## 3. Step: Sqoop Installation and Configuration
+  * Install and Configure Sqoop
 
-## 3.1. Step: Import data from Oracle to HDFS
+### 3.1. Step: Import data from Postgree to HDFS
   * Download connector JDBC         -------- NOT FINISHED
   * Copy .jar to lib sqoop folder   -------- NOT FINISHED
-  * Import Data from Oracle to HDFS -------- NOT FINISHED
+  * Import Data from Postgree to HDFS -------- NOT FINISHED
   
 
 
