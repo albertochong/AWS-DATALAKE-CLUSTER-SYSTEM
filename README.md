@@ -51,5 +51,8 @@ SSH               TCP             22          Anywhere
   * Connect to PostgreSql and list tables from Database 
   * Connect to PostgreSql and import Data to HDFS 
   
-
+## Step: Install HUE
+  * Install PostgreSql ----------------- NOT FINISHED
+  * Install Hive------------------------ NOT FINISHED
+ 
 
