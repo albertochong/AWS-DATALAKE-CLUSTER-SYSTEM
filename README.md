@@ -31,9 +31,9 @@ SSH               TCP             22          Anywhere
   * Install and Configure sqoop     
   
 ## 4. Step: Working with HDFS
-  * List files ------------- NOT FINISHED
-  * Create directory-------- NOT FINISHED
-  * copy files ------------- NOT FINISHED
+  * List files 
+  * Create directory
+  * copy files 
   
 ## 5. Step: Import data from Oracle to HDFS
   * Download connector JDBC         -------- NOT FINISHED
