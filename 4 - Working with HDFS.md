@@ -1,1 +1,52 @@
 
+# Working with HDFS
+
+## Reference HDFS commands 
+###  https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html
+
+## Run in Terminal
+
+* Get Hdfs content
+```bash
+hdfs dfs -ls /
+```
+* Create directory
+```bash
+hdfs dfs -mkdir /IOT
+```
+* Copy files 
+```bash
+hdfs dfs -put file_name /IOT
+```
+* Get files from HDFS
+```bash
+hdfs dfs -get /IOT/file_name
+```
+* Get space size, used and available
+```bash
+hdfs dfs -df
+```
+
+* Get space size, used and available
+```bash
+hdfs dfs -df -h
+```
+
+* Get space size, used and available by folders
+```bash
+hdfs dfs -du /
+```
+
+* get HDFS report 
+```bash
+hdfs dfsadmin -report
+```
+* Check HDFS healthy  
+```bash
+hdfs fsck  /
+```
+
+
+
+
+
