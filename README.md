@@ -30,7 +30,7 @@ SSH               TCP             22          Anywhere
   * Intsall and Configure Hadoop NameNode and DataNode
   * Install and Configure sqoop     
   
-## 4. Step: Working with HDFS
+## 3.1 Step: Working with HDFS
   * List files 
   * Create directory
   * copy files 
