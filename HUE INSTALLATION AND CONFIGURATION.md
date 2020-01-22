@@ -20,5 +20,25 @@ sudo systemctl status postgresql
 sudo systemctl enable postgresql
 ```
 
+* Give permission to postgres /var/lib/pgsql/data
+```bash
+sudo chown -R postgres:postgres  /var/lib/pgsql
+```
+
+* start postgrsql
+```bash
+ sudo systemctl start postgresql
+```
+
+* Checking again PostgreSql status
+```bash
+sudo systemctl status postgresql
+```
+
+
+
+
+
+
 
 
