@@ -51,6 +51,15 @@ SSH               TCP             22          Anywhere
   * Connect to PostgreSql and list tables from Database 
   * Connect to PostgreSql and import Data to HDFS 
   
+## 4. Step: Flume Installation and Configuration
+  * Install and Configure Flume
+
+### 4.1. Step: Import data from Twitter to HDFS
+  *  
+  *  
+  *  
+  * 
+  
 ## Step: Install HUE
   * Install PostgreSql ----------------- NOT FINISHED
   * Install Hive------------------------ NOT FINISHED
