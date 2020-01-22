@@ -4,7 +4,7 @@ According Apache Flume is a distributed, reliable, and available service for eff
 
 ### Run in terminal(NameNode or another server) with user hadoop
 
-* Download Sqoop under home/user directory
+* Download Flume under home/hadoop directory
 ```bash
 cd /opt
 sudo wget https://www-us.apache.org/dist/flume/1.9.0/apache-flume-1.9.0-bin.tar.gz
@@ -21,7 +21,7 @@ sudo mv apache-flume-1.9.0-bin/ flume
 sudo chown -R hadoop:hadoop flume/
 ```
 
-*  add flume envirnoment variables under home/user
+*  add flume envirnoment variables under home/hadoop
 ```bash
 nano cd ~/.bash_profile
 # FLUME
