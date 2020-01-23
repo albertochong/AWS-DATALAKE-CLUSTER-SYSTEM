@@ -41,5 +41,8 @@ nano $FLUME_HONE/conf/sqoop-env.sh
 export JAVA_HOME=/opt/jdk
 FLUME_CLASSPATH="opt/flume/lib/*"
 ```
+
  
+
+
 
