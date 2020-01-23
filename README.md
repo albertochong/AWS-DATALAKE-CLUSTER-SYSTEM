@@ -58,7 +58,6 @@ SSH               TCP             22          Anywhere
   *  Configure Agent(Source - Channel - Sink)
   *  Create Twitter App
   *  Starting agent and capture twitts real time and store in HDFS
-  * 
   
 ## Step: Install HUE
   * Install PostgreSql ----------------- NOT FINISHED
