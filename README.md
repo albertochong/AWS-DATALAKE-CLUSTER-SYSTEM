@@ -55,9 +55,9 @@ SSH               TCP             22          Anywhere
   * Install and Configure Flume
 
 ### 4.1. Step: Import data from Twitter to HDFS
-  *  
-  *  
-  *  
+  *  Configure Agent(Source - Channel - Sink)
+  *  Create Twitter App
+  *  Starting agent and capture twitts real time and store in HDFS
   * 
   
 ## Step: Install HUE
