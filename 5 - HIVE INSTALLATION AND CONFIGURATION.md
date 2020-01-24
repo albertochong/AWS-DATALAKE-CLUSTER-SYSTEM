@@ -163,3 +163,6 @@ nano hive-site.xml
 --
 
 
+* Initialize Hive
+```bash
+hive
