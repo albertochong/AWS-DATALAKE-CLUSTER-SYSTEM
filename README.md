@@ -59,8 +59,8 @@ SSH               TCP             22          Anywhere
   *  Create Twitter App
   *  Starting agent and capture twitts real time and store in HDFS
  
-## 5. Step: NIFI Installation and Configuration
-  * Install and Configure NIFI
+## 5. Step: HIVE Installation and Configuration
+  * Install and Configure HIVE
   
 ## Step: Install HUE
   * Install PostgreSql ----------------- NOT FINISHED
