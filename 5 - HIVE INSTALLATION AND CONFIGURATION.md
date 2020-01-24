@@ -2,9 +2,9 @@
 # HIVE Installation and Configuration
 The Apache Hive ™ data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL. Structure can be projected onto data already in storage. A command line tool and JDBC driver are provided to connect users to Hive.
 
-### Run in terminal(NameNode or another server) with user hadoop
+## Run in terminal(NameNode or another server) with user hadoop
 
-## INSTALL HIVE
+### INSTALL HIVE
 * Download Hive
 ```bash
 cd /opt
@@ -41,8 +41,7 @@ source ~/.bash_profile
 hive --version
 ```
 
-## INSTALL POSTGRESQL
-## Run in Terminal
+### INSTALL POSTGRESQL
 
 * Install PostgreSql
 ```bash
@@ -73,4 +72,11 @@ sudo chown -R postgres:postgres  /var/lib/pgsql
 ```bash
 sudo systemctl status postgresql
 ```
+
+* download JDBC for postgresql and store in hive lib
+```bash
+cd /opt/hive/lib
+wget https://jdbc.postgresql.org/download/postgresql-42.2.4.jar
+```
+
 
