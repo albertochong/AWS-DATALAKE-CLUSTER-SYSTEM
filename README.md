@@ -2,11 +2,11 @@
 Create DATALAKE with Apache Hadoop and Ecosystem - Instalation, configuration on 3 AWS machines
 
 
-# Installation of Hadoop in AWS
+# Hadoop Installation on AWS
 This guide describes to do manually setup one DATALAKE cluster with Hadoop on AWS 3 Red Hat Linux 8 machines new big data environment Apache Hadoop ecosystem for the purpose learn mains concepts from begin 
 
 
-## Create 3 Isntance (t2.Xlarge) with the options
+## Create 3 Instance (t2.Xlarge) with the options
 * AMI: Amazon Linux 2 AMI (HVM), SSD Volume Type 64 bit
 * Network: vpc by default + No precense subnet + Public IP Use subnet  setting (enable)
 * Storage: Root disk 40 GB + Add Volume 100GB Magnetic (delete on termination)
