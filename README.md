@@ -62,6 +62,11 @@ SSH               TCP             22          Anywhere
 ## 5. Step: HIVE Installation and Configuration
   * Install and Configure HIVE
   
+### 5.1. Step: Working with Hive
+  *  
+  *  
+  *  
+  
 ## Step: Install HUE
   * Install PostgreSql ----------------- NOT FINISHED
   * Install Hive------------------------ NOT FINISHED
