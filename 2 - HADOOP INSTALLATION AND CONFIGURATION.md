@@ -82,7 +82,7 @@ ssh hadoop@dns_DataNode1_machine
 
 ## Hadoop Installation e Configuration
 
-* Download Hadoop under home/use directory
+* Download Hadoop under home/use directory (with hdoop user in Namenode)
 ```bash
 sudo wget https://www-eu.apache.org/dist/hadoop/common/hadoop-3.2.1/hadoop-3.2.1.tar.gz
 ```
