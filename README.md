@@ -63,7 +63,7 @@ SSH               TCP             22          Anywhere
   * Install and Configure HIVE
   
 ### 5.1. Step: Working with Hive
-  *  
+  *  Create table from HFDS files
   *  
   *  
   
