@@ -67,6 +67,14 @@ SSH               TCP             22          Anywhere
   *  
   *  
   
+## 6. Step: HBASE Installation and Configuration
+  * Install and Configure HBASE
+  
+### 6.1. Step: Working with HBASE
+  *  
+  *  
+  *  
+  
 ## Step: Install HUE
   * Install PostgreSql ----------------- NOT FINISHED
   * Install Hive------------------------ NOT FINISHED
