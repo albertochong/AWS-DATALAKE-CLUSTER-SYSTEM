@@ -160,9 +160,10 @@ nano hive-site.xml
      <description>password for connecting to postgresql server</description>
    </property>
 </configuration>
---
+```
 
 
 * Initialize Hive
 ```bash
 hive
+```
