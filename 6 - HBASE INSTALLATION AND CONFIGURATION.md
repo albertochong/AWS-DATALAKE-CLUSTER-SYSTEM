@@ -28,7 +28,6 @@ nano .bash_profile
 export HBASE_HOME=/opt/hbase
 export PATH=$PATH:$HBASE_HOME/bin
 export CLASSPATH=$CLASSPATH:/opt/hbase/lib/*:.
-   
 ```     
 
 * Renitialize/Activate
@@ -43,7 +42,7 @@ hdfs dfs -mkdir /hbase
 
 * Create directory zookepper if no exists
 ```bash   
-mkdir /opt/zookepper
+mkdir /opt/hadoop/zookepper
 ``` 
 
 * Go to /hbase/conf to edit hbase-env.sh
@@ -97,7 +96,6 @@ nano /opt/hbase/conf/hbase-site.xml -------------- let´s add some configuration
 
 ```
 
-
 * edit file regionservers and add yours RegionServes.It will be the DataNodes 1 and 2
 ```bash
 nano /opt/hbase/conf/regionservers
@@ -105,18 +103,32 @@ dns_dataNode1
 dns_Datanode2
 ```
 
-
-
-
-
-
-
-* Inside folder hbase create directoryr hfiles(directory to database files)
+* Go to Datanode 1 and 2 and create folder hbase (connect with hadoop user) and change owner
 ```bash
-mkdir hfiles
+sudo mkdir /opt/hbase
+sudo chown -R hadoop:hadoop /opt/hbase/
 ```
 
+* Continue on Datanode 1 and 2 and Add hbase envirnoment variables under home/hadoop
+```bash
+nano .bash_profile
+ 
+# HBASE
+export HBASE_HOME=/opt/hbase
+export PATH=$PATH:$HBASE_HOME/bin
+export CLASSPATH=$CLASSPATH:/opt/hbase/lib/*:.
+```
 
+* Renitialize/Activate
+```bash   
+source .bash_profile
+``` 
+
+* Now from Namenode we will copy Habse content to all slaves
+```bash   
+scp -rv /opt/hbase hadoop@ip-172-31-6-22.us-east-2.compute.internal:/opt ------------ Datanode1
+scp -rv /opt/hbase hadoop@ip-172-31-3-230.us-east-2.compute.internal:/opt------------ Datanode2
+``` 
 
 
 * checking if hdfs,zookeeper and yarn services are online. If not, you must start
