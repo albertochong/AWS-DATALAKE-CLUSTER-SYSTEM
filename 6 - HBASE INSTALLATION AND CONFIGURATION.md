@@ -91,6 +91,11 @@ nano /opt/hbase/conf/hbase-site.xml -------------- let´s add some configuration
     <name>hbase.zookeeper.property.clientPort</name>
     <value>2181</value>
   </property>
+  
+  <property>
+  <name>hbase.unsafe.stream.capability.enforce</name>
+  <value>false</value>
+</property>
 
 </configuration>
 
