@@ -63,7 +63,7 @@ SSH               TCP             22          Anywhere
   * Install and Configure HIVE
   
 ### 5.1. Step: Working with Hive
-  *  Create table from HFDS files
+  *  Create table from HFDS files -------- NOT FINISHED YET
   *  
   *  
   
@@ -78,5 +78,9 @@ SSH               TCP             22          Anywhere
 ## Step: Install HUE
   * Install PostgreSql ----------------- NOT FINISHED
   * Install Hive------------------------ NOT FINISHED
+  
+## Step: Install AMBARI ----------------- NOT FINISHED
+  * 
+  
  
 
