@@ -144,7 +144,7 @@ export PATH="${PATH}:${HADOOP_HOME}/bin"
    <property>
       <!-- HDFS PATH -->
      <name>fs.default.name</name>
-     <value>hdfs://ip-172-31-7-63.us-east-2.compute.internal:19000</value><!--- dns namenode -->
+     <value>hdfs://ip-172-31-8-80.us-east-2.compute.internal:19000</value><!--- dns namenode -->
    </property>
 </configuration>
 ``` 
@@ -195,7 +195,7 @@ ip-172-31-14-249.us-east-2.compute.internal
    
    <property>
       <name>yarn.resourcemanager.address</name>
-      <value>ip-172-31-8-152.us-east-2.compute.internal:8032</value><!-- dns namenode. -->
+      <value>ip-172-31-8-80.us-east-2.compute.internal:8032</value><!-- dns namenode. -->
    </property>
 
    <property> 
@@ -227,7 +227,7 @@ ip-172-31-14-249.us-east-2.compute.internal
 
   <property>
      <name>yarn.resourcemanager.hostname</name>
-     <value>ip-172-31-7-63.us-east-2.compute.internal</value><!-- dns namenode  -->
+     <value>ip-172-31-8-80.us-east-2.compute.internal</value><!-- dns namenode  -->
   </property>
 
   <property>
