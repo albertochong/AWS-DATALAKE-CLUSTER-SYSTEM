@@ -75,6 +75,14 @@ SSH               TCP             22          Anywhere
   *  
   *  
   
+## 7. Step: KAFKA Installation and Configuration
+  * Install and Configure KAFKA
+  
+### 7.1. Step: Working with KAFKA
+  *  
+  *  
+  *  
+  
 ## Step: Install HUE
   * Install PostgreSql ----------------- NOT FINISHED
   * Install Hive------------------------ NOT FINISHED
