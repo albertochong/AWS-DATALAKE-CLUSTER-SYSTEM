@@ -83,6 +83,10 @@ SSH               TCP             22          Anywhere
   *  
   *  
   
+## 8. Step: TEZ Installation and Configuration
+  * Install and Configure TEZ
+  
+  
 ## Step: Install HUE
   * Install PostgreSql ----------------- NOT FINISHED
   * Install Hive------------------------ NOT FINISHED
