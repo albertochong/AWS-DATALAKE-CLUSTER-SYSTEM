@@ -32,7 +32,17 @@ export PATH=$PATH:$KAFKA_HOME/bin
 source .bash_profile
 ``` 
 
-* Check if folder zookeeper is there means zookeeper is already installed
+* Check if folder zookeeper .jar is there means zookeeper is already installed
 ```bash   
 cd /opt/kafka/libs
+``` 
+
+* starting zookeeper(kafka needs is managed by zookeeper).Go to KAFKA folder installation 
+```bash 
+bin/zookeeper-server-start.sh config/zookeeper.properties
+``` 
+
+* starting broker. Go to KAFKA folder installation
+```bash 
+bin/kafka-server-start.sh config/server.properties
 ``` 
