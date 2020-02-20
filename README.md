@@ -70,23 +70,10 @@ SSH               TCP             22          Anywhere
 ## 6. Step: HBASE Installation and Configuration
   * Install and Configure HBASE
   
-### 6.1. Step: Working with HBASE
-  *  
-  *  
-  *  
   
-## 7. Step: KAFKA Installation and Configuration
-  * Install and Configure KAFKA
-  
-### 7.1. Step: Working with KAFKA
-  *  
-  *  
-  *  
-  
-## 8. Step: TEZ Installation and Configuration
+## 7. Step: TEZ Installation and Configuration
   * Install and Configure TEZ
-  
-  
+   
 ## Step: Install HUE
   * Install PostgreSql ----------------- NOT FINISHED
   * Install Hive------------------------ NOT FINISHED
