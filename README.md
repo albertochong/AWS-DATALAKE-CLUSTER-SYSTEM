@@ -69,10 +69,12 @@ SSH               TCP             22          Anywhere
   
 ## 6. Step: HBASE Installation and Configuration
   * Install and Configure HBASE
-  
-  
-## 7. Step: TEZ Installation and Configuration
+   
+## 7. Step: STREAMSETS Installation and Configuration
   * Install and Configure TEZ
+  
+## 8. Step: TEZ Installation and Configuration
+  * Install and Configure TEZ ----------------- NOT FINISHED
    
 ## Step: Install HUE
   * Install PostgreSql ----------------- NOT FINISHED
