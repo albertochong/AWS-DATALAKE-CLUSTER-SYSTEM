@@ -37,31 +37,37 @@ SSH               TCP             22          Anywhere
 ## 2. Step: Hadoop Installation and Configuration
   * Install and Configure Hadoop NameNode and DataNode 
   
+  
 ### 2.1 Step: Working with HDFS
   * List files 
   * Create directory
   * copy files 
   
+  
 ## 3. Step: Sqoop Installation and Configuration
   * Install and Configure Sqoop
+
 
 ### 3.1. Step: Import data from PostgreSql to HDFS
   * Download connector JDBC for PostgreSql        
   * Copy .jar to lib sqoop folder  
   * Connect to PostgreSql and list tables from Database 
   * Connect to PostgreSql and import Data to HDFS 
-  
+ 
+ 
 ## 4. Step: Flume Installation and Configuration
   * Install and Configure Flume
+
 
 ### 4.1. Step: Import data from Twitter to HDFS
   *  Configure Agent(Source - Channel - Sink)
   *  Create Twitter App
   *  Starting agent and capture twitts real time and store in HDFS
  
+ 
 ## 5. Step: HIVE Installation and Configuration
   * Install and Configure HIVE
-  
+      
 ### 5.1. Step: Working with Hive
   *  Create table from HFDS files -------- NOT FINISHED YET
   *  
@@ -69,17 +75,21 @@ SSH               TCP             22          Anywhere
   
 ## 6. Step: HBASE Installation and Configuration
   * Install and Configure HBASE
-   
+        
+        
 ## 7. Step: STREAMSETS Installation and Configuration
   * Install and Configure TEZ
+  
   
 ## 8. Step: TEZ Installation and Configuration
   * Install and Configure TEZ ----------------- NOT FINISHED
    
+   
 ## Step: Install HUE
   * Install PostgreSql ----------------- NOT FINISHED
   * Install Hive------------------------ NOT FINISHED
-  
+ 
+ 
 ## Step: Install AMBARI ----------------- NOT FINISHED
   * 
   
