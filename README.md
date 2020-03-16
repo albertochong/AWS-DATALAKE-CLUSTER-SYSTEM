@@ -78,7 +78,7 @@ SSH               TCP             22          Anywhere
         
         
 ## 7. Step: STREAMSETS Installation and Configuration
-  * Install and Configure TEZ
+  * Install and Configure STREAMSETS
   
   
 ## 8. Step: TEZ Installation and Configuration
