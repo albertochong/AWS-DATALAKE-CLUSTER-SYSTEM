@@ -1,5 +1,5 @@
 # AWS - DATALAKE - SYSTEM
-Create DATALAKE with Apache Hadoop and Ecosystem - Instalation, configuration on 3 AWS machines
+Create DATALAKE with Apache Hadoop and Ecosystem - Instalation, configuration on 3(1 Namenode and 2 datanodes) AWS machines
 
 
 # Hadoop Installation on AWS
