@@ -1,1 +1,0 @@
-# TEZ Installation and Configuration
